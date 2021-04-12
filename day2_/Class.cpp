@@ -1,33 +1,24 @@
+#include "Class.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <string>
 #include <sstream>
-#include "Class.h"
-#include "day2part2.h"
 
 using namespace std;
 
-int main()
+int Class::MyMethoud()
 {
-    //day 2 part 1
-    //Class mc;
-    //cout << mc.MyMethoud() << endl;
-    
-    //day 2 part 2
-    day2part2 day;
-    cout << day.solver() << endl;
-    /*
     fstream inFile;
     inFile.open("input.txt");
-    
+
     string tp, characters, password, temp;
-    
+
     int min, max;
     int truePasswords = 0;
     int count = 0;
     char character;
-    
+
     vector<string>ts;
 
 
@@ -50,7 +41,7 @@ int main()
         temp = "";
         getline(ss, characters, ':');
         character = characters[0];
-        
+
         getline(ss, password, '\n');
 
         for (int j = 0; j < password.size(); j++)
@@ -64,10 +55,9 @@ int main()
         {
             truePasswords++;
         }
-        cout << truePasswords << endl;
+        //cout << truePasswords << endl;
         count = 0;
     }
-    
+    return truePasswords;
     inFile.close();
-    */
 }
